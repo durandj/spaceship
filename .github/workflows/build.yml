@@ -17,7 +17,7 @@ jobs:
       with:
         node-version: 'lts/*'
     - uses: pnpm/action-setup@v4
-    - run: pnpm clean-install
+    - run: pnpm install
     - name: Install Playwright Browsers
       run: pnpx playwright install --with-deps
     - run: pnpm test
