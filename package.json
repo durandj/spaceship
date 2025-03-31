@@ -1,8 +1,21 @@
 {
-	"name": "template-ts-vite",
-	"version": "1.2.0",
-	"description": "Excalibur TypeScript template for Vite",
+	"name": "@durandj/spaceship",
+	"version": "1.0.0",
+	"description": "Spaceship game to highlight use of quadtrees",
+	"license": "BSD-2-Clause",
+	"author": "James Durand",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/durandj/spaceship.git"
+	},
+	"bugs": {
+		"url": "https://github.com/durandj/spaceship/issues"
+	},
+	"homepage": "https://github.com/durandj/spaceship#readme",
 	"main": "src/main.ts",
+	"engines": {
+		"pnpm": "*"
+	},
 	"scripts": {
 		"dev": "vite",
 		"start": "vite",
@@ -14,17 +27,6 @@
 		"test": "npm run build && npx playwright test",
 		"test:integration-update": "npx playwright test --update-snapshots"
 	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/excaliburjs/template-ts-vite.git"
-	},
-	"keywords": ["excalibur", "excaliburjs", "vite", "game-engine"],
-	"author": "Erik Onarheim",
-	"license": "BSD-2-Clause",
-	"bugs": {
-		"url": "https://github.com/excaliburjs/template-ts-vite/issues"
-	},
-	"homepage": "https://github.com/excaliburjs/template-ts-vite#readme",
 	"dependencies": {
 		"excalibur": "0.30.3"
 	},
