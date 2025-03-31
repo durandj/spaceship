@@ -16,10 +16,11 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: 'lts/*'
-    - run: npm ci
+    - uses: pnpm/action-setup@v4
+    - run: pnpm clean-install
     - name: Install Playwright Browsers
-      run: npx playwright install --with-deps
-    - run: npm test
+      run: pnpx playwright install --with-deps
+    - run: pnpm test
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
